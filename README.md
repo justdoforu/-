@@ -1,5 +1,4 @@
-# -
-单元测试
+# -单元测试
 
 1.karma和Jasmine自动化单元测试
 https://www.jianshu.com/p/a398301f7696
