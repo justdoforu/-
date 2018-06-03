@@ -1,0 +1,81 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2018-06-03T05:29:20.021Z",
+    "end": "2018-06-03T05:29:20.072Z",
+    "duration": 51,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 1,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "danger",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "1e6c1343-2c12-47ef-829c-59a5785e4299",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "ac59b1f1-0acb-4609-885b-db0adce0edcd",
+        "title": "后台接口测试",
+        "fullFile": "E:\\一灯\\QA\\test\\service\\router.spec.js",
+        "file": "\\router.spec.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "test接口",
+            "fullTitle": "后台接口测试 test接口",
+            "timedOut": false,
+            "duration": 0,
+            "state": "failed",
+            "pass": false,
+            "fail": true,
+            "pending": false,
+            "code": "// axios.get('http://localhost:3000/test')\n//     .then(function (res) {\n//         expect(res.status).to.equal(200);\n//         if(res.data.data == 'hello world'){\n//             done();\n//         }else{\n//             done(new Error(\"结果不符合预期\"));\n//         }\n//      })\n//     .catch(function(error){\n//         done(error);\n//     })\nrequest(\"http://localhost:3000/\")\n    .get('/test')\n      .expect('Content-Type',/json/)\n      .expect(200,function (res) {\n            console.log(res.body);\n            if(res.data == 'Hello world'){\n                done();\n            }else{\n                done(err);\n            }\n})",
+            "err": {
+              "message": "TypeError: Cannot read property 'body' of null",
+              "estack": "TypeError: Cannot read property 'body' of null\n    at Test.<anonymous> (router.spec.js:30:37)\n    at Test.assert (E:\\一灯\\QA\\test\\node_modules\\supertest\\lib\\test.js:181:6)\n    at assert (E:\\一灯\\QA\\test\\node_modules\\supertest\\lib\\test.js:131:12)\n    at E:\\一灯\\QA\\test\\node_modules\\supertest\\lib\\test.js:128:5\n    at Test.Request.callback (E:\\一灯\\QA\\test\\node_modules\\superagent\\lib\\node\\index.js:706:12)\n    at parser (E:\\一灯\\QA\\test\\node_modules\\superagent\\lib\\node\\index.js:906:18)\n    at IncomingMessage.res.on (E:\\一灯\\QA\\test\\node_modules\\superagent\\lib\\node\\parsers\\json.js:19:7)\n    at endReadableNT (_stream_readable.js:1064:12)"
+            },
+            "isRoot": false,
+            "uuid": "54717e02-bbdd-45a3-9750-ae22cfc2bc08",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [],
+        "failures": [
+          "54717e02-bbdd-45a3-9750-ae22cfc2bc08"
+        ],
+        "pending": [],
+        "skipped": [],
+        "duration": null,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
