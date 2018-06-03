@@ -8,3 +8,6 @@ https://www.jianshu.com/p/d5fe477d4c03
 
 3.浏览器自动化测试工具selenium-webdriver
 https://www.jianshu.com/p/ec6271f50910
+
+4.后台接口测试mocha
+https://www.jianshu.com/p/ee732df08afd
